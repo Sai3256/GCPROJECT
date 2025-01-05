@@ -65,6 +65,7 @@ button:hover {
 }
 nav ul {
   display: flex;
+  margin-left: 100px;
   gap: 20px;
 }
 
@@ -193,4 +194,83 @@ nav ul li:hover {
 
 .gift-section {
   scroll-margin: 120px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: -20px;
+  margin-left: 150px;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+#search-btn {
+  background-color: var(--red600);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+#search-btn:hover {
+  opacity: 0.8;
+}
+
+
+nav ul {
+  display: flex;
+  gap: 30px; 
+  margin-right: 50px; 
+}
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+#user-icon {
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+  margin-right: -490px;
+  margin-left: 0px;
+  
+ 
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(177, 9, 9, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
 }
